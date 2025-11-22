@@ -5,20 +5,20 @@ This repository provides an open-source implementation of a batched stochastic g
 
 This software has been validated to run successfully in the following configuration.
 Other operating systems, GPUs, drivers, or MATLAB versions have not been tested and may require adjustments.
-	•	OS: CentOS Linux 8
-  •	MATLAB: R2023b
-	•	GPU: NVIDIA L40
-	•	Driver: 535.161.08
-	•	CUDA: 12.2
+- OS: CentOS Linux 8
+- MATLAB: R2023b
+- GPU: NVIDIA L40
+- Driver: 535.161.08
+- CUDA: 12.2
 
 Although the algorithm is platform-independent in principle, reproducibility outside this tested environment is not guaranteed.
 
 ## Required MATLAB Toolboxes
 
 The following MATLAB toolboxes must be installed:
-	•	Optimization Toolbox
-	•	Parallel Computing Toolbox
-	•	Image Processing Toolbox
+- Optimization Toolbox
+- Parallel Computing Toolbox
+- Image Processing Toolbox
 
 The GPU implementation also requires a compatible CUDA-enabled device.
 
@@ -38,8 +38,8 @@ An example configuration script is provided:
 ```cfg_ptychoRecon_example.m```
 
 To perform a reconstruction:
-	1.	Modify the parameters inside the config file according to your dataset.
-	2.	Simply run the config script, and the reconstruction pipeline will start automatically.
+- Modify the parameters inside the config file according to your dataset.
+- Simply run the config script, and the reconstruction pipeline will start automatically.
 
 All reconstruction settings, file paths, and algorithmic hyperparameters are controlled through this config file.
 
@@ -47,5 +47,5 @@ All reconstruction settings, file paths, and algorithmic hyperparameters are con
 
 This project partially draws inspiration from the following codebases.
 We sincerely acknowledge their contributions:
-	•	fold_slice: https://github.com/yijiang1/fold_slice
-	•	py4DSTEM: https://github.com/py4dstem/py4DSTEM
+- fold_slice: https://github.com/yijiang1/fold_slice
+- py4DSTEM: https://github.com/py4dstem/py4DSTEM
