@@ -41,7 +41,9 @@ To perform a reconstruction:
 - Modify the parameters inside the config file according to your dataset.
 - Simply run the config script, and the reconstruction pipeline will start automatically.
 
-All reconstruction settings, file paths, and algorithmic hyperparameters are controlled through this config file.
+If you encounter GPU memory limitations, you can reduce memory usage by adjusting either:
+- the number of CBED patterns processed per batch (nSpotsParallel), or
+- the number of sub-batches used within each batch before updating the object function (nSubSpotsParallelM).
 
 ## Code References
 
