@@ -45,6 +45,44 @@ If you encounter GPU memory limitations, you can reduce memory usage by adjustin
 - the number of CBED patterns processed per batch (nSpotsParallel), or
 - the number of sub-batches used within each batch before updating the object function (nSubSpotsParallelM).
 
+## Output Files
+
+For each reconstruction, the program writes all results to the specified output directory:
+
+```path_saveOutputs/```
+
+The following files will be generated:
+
+(1) Log File
+- log.txt
+Records all console output, iteration progress, parameter settings, and runtime information.
+
+(2) Reconstructed Object Function
+
+Saved every specified number of iterations (XXX denotes the iteration index):
+- objAbsXXX.mrcs – amplitude of the reconstructed object
+- objAngleXXX.mrcs – phase of the reconstructed object
+
+(3) Reconstructed Probe Function
+
+Also saved per iteration (XXX denotes the iteration index):
+- probAbsXXX.mrcs – probe amplitude
+- probAngleXXX.mrcs – probe phase
+
+(4) Probe Initialization Aperture (Optional)
+
+If aperture-based initialization is enabled, the following file will be saved:
+- vP.mrc – the input aperture used to initialize the probe function
+
+(5) Initial Values (Iteration 0)
+
+The program also stores the starting point of the reconstruction:
+- objAbs000.mrcs – initial object amplitude
+- objAngle000.mrcs – initial object phase
+- probAbs.mrcs – initial probe amplitude
+- probAngle.mrcs – initial probe phase
+- spot000.mat – distances of all scan positions from the FOV center (in meters)
+
 ## Code References
 
 This project partially draws inspiration from the following codebases.
