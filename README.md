@@ -87,5 +87,5 @@ The program also stores the starting point of the reconstruction:
 
 This project partially draws inspiration from the following codebases.
 We sincerely acknowledge their contributions:
-- fold_slice: [](https://github.com/yijiang1/fold_slice)
-- py4DSTEM: [](https://github.com/py4dstem/py4DSTEM)
+- fold_slice: [https://github.com/yijiang1/fold_slice](https://github.com/yijiang1/fold_slice)
+- py4DSTEM: [https://github.com/py4dstem/py4DSTEM](https://github.com/py4dstem/py4DSTEM)
